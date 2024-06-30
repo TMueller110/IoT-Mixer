@@ -114,7 +114,8 @@ Below is a  guide on how to wire everything.
 
 #### Wiring Diagram
 
-![bild](https://github.com/TMueller110/Smart_Mixer/assets/155649436/949add84-99fa-41df-9281-9daf1e75e866)
+![bild](https://github.com/TMueller110/IoT-Mixer/assets/155649436/2a69c40b-fa29-458f-b142-071ab16d6200)
+
 
 
 #### Wiring Instructions
