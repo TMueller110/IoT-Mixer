@@ -1,0 +1,100 @@
+
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+
+# Other existing configurations
+# Define the MQTT Switch
+mqtt:
+  switch:
+    - name: "Pico Motor"
+      state_topic: "homeassistant/switch/pico_motor/state"
+      command_topic: "homeassistant/switch/pico_motor/set"
+      payload_on: "ON"
+      payload_off: "OFF"
+      retain: true
+      unique_id: "pico_motor_switch"
+
+  sensor:
+    - name: "Pico Humidity"
+      state_topic: "homeassistant/sensor/pico_humidity/state"
+      unit_of_measurement: "%"
+      value_template: "{{ value }}"
+      unique_id: "pico_humidity_sensor"
+    - name: "Pico Temperature"
+      state_topic: "homeassistant/sensor/pico_temperature/state"
+      unit_of_measurement: "°C"
+      value_template: "{{ value }}"
+      unique_id: "pico_temperature_sensor"
+    - name: "Pico Motor Speed"
+      state_topic: "homeassistant/sensor/pico_motor_speed/state"
+      unit_of_measurement: "Steps"
+      value_template: "{{ value }}"
+      unique_id: "pico_motor_speed_sensor"
+      
+  number:
+    - name: "Pico Motor Speed Control"
+      command_topic: "homeassistant/number/pico_motor_speed_control/set"
+      min: 0
+      max: 10
+      step: 1
+      unit_of_measurement: "Steps"
+      state_topic: "homeassistant/sensor/pico_motor_speed/state"
+      value_template: "{{ value }}"
+      unique_id: "pico_motor_speed_control"
+      
+      
+input_number:
+  water_amount:
+    name: Water Amount (Liters)
+    initial: 1.0
+    min: 0
+    max: 10
+    step: 0.1
+    unit_of_measurement: 'L'
+  sugar_amount:
+    name: Sugar Amount (kg)
+    initial: 0.5
+    min: 0
+    max: 10
+    step: 0.1
+    unit_of_measurement: 'kg'
+  invertase_amount:
+    name: Invertase Amount (grams)
+    initial: 10
+    min: 0
+    max: 100
+    step: 1
+    unit_of_measurement: 'g'
+
+input_boolean:
+  mixing:
+    name: Mixing
+    initial: off
+    
+    
+template:
+  - sensor:
+      - name: "Mixing Time Left"
+        unit_of_measurement: "minutes"
+        state: >
+          {% if is_state('input_boolean.mixing', 'on') %}
+            {% set water = states('input_number.water_amount') | float %}
+            {% set sugar = states('input_number.sugar_amount') | float %}
+            {% set invertase = states('input_number.invertase_amount') | float %}
+            {% set temp = states('sensor.pico_temperature') | float %}
+            {% set total_mass = (water * 1000) + (sugar * 1000) %}
+            {% set base_time = ((total_mass / invertase) * 0.0752) * 60 %}
+            {% set adjusted_time = base_time * (50 / temp) %}
+            {{ adjusted_time | int }}
+          {% else %}
+            0
+          {% endif %}

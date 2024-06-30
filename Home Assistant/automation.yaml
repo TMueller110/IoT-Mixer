@@ -1,0 +1,25 @@
+- alias: Start Mixing
+  trigger:
+    platform: state
+    entity_id: input_boolean.mixing
+    to: 'on'
+  action:
+    - service: mqtt.publish
+      data:
+        topic: 'homeassistant/switch/pico_motor/set'
+        payload: 'ON'
+    - delay: >
+        {% set water = states('input_number.water_amount') | float %}
+        {% set sugar = states('input_number.sugar_amount') | float %}
+        {% set invertase = states('input_number.invertase_amount') | float %}
+        {% set temp = states('sensor.pico_temperature') | float %}
+        {% set total_mass = (water * 1000) + (sugar * 1000) %}
+        {% set base_time = ((total_mass / invertase) * 0.0752) * 3600 %}
+        {% set adjusted_time = base_time * (50 / temp) %}
+        {{ adjusted_time | int }}
+    - service: mqtt.publish
+      data:
+        topic: 'homeassistant/switch/pico_motor/set'
+        payload: 'OFF'
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.mixing
