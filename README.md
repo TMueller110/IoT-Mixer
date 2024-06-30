@@ -33,7 +33,7 @@ I chose to build this automated mixing system to streamline the process of makin
 
 Additionally, this project may inspire others to explore home automation solutions for various tasks, showcasing the potential of integrating smart technology into everyday activities.
 
-##Note that a limitation of the project is that the mixer itself (the mechanical part) still has to be created and mounted on the motor axis.## 
+**Note that a limitation of the project is that the mixer itself (the mechanical part) still has to be created and mounted on the motor axis.**
 
 ![bild](https://github.com/TMueller110/IoT-Mixer/assets/155649436/3563b7c3-2bc5-4e95-9c6f-34d0a66dbcb1)
 
