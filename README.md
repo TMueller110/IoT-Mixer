@@ -296,11 +296,12 @@ There are two Home Assistant dashboard. One for controlling the mixer directly a
 
 * Direct Mixer Control
   
-![bild](https://github.com/TMueller110/CarRental_Fortnox/assets/155649436/76bf4d98-96a3-4bf5-9259-fc3e638cd8d9)
+![bild](https://github.com/TMueller110/IoT-Mixer/assets/155649436/25b04470-3b8b-4eb4-aab3-31f6a5e3e5e4)
+
 
 * Automatic Mixer Control
   
-![bild](https://github.com/TMueller110/Smart_Mixer/assets/155649436/1878e776-79b5-4b1a-899d-cab1a9f63b79)
+![bild](https://github.com/TMueller110/IoT-Mixer/assets/155649436/5f21832c-f3df-4a6d-91e5-7ddd01af4f44)
 
 
 ### Finalizing the Design
