@@ -312,6 +312,7 @@ The final design of the automated mixing system using the Raspberry Pi Pico W an
 * Improvements: Enhanced error handling and better scalability for larger volumes or different processes.
 #### Pictures
 Below are some pictures of the final setup:
+![bild](https://github.com/TMueller110/IoT-Mixer/assets/155649436/ed66182d-fdc7-49e7-a3f9-feed449bd033)
 ![DSC_0214](https://github.com/TMueller110/Smart_Mixer/assets/155649436/c0fb5858-b068-44db-a56c-3c2a3632bfb4)
 ![DSC_0211](https://github.com/TMueller110/Smart_Mixer/assets/155649436/da2c5d74-c7c7-4010-8251-b68c29e5a808)![DSC_0213](https://github.com/TMueller110/Smart_Mixer/assets/155649436/6a879836-bb73-4292-b4b9-f57e893dca08)
 ![DSC_02![DSC_0213](https://github.com/TMueller110/Smart_Mixer/assets/155649436/c9a87444-5004-4dd5-9f5c-cf289e492a24)
