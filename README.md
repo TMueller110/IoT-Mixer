@@ -150,7 +150,10 @@ Below is a  guide on how to wire everything.
    - Connect the other terminal to the ground.
 
 7. **Potentiometer:**
-   - Connect the potentiometer to the Pico W ADC pin if needed for additional control features.
+   - Connect the potentiometer to the Pico W
+   - DT to 'GPI11' 
+   - CLK to 'GPI12' 
+   - SW to 'GPI13'
 
 8. **Motor Connections:**
    - Connect the DC motor to the L298N motor driver outputs.
