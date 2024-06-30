@@ -282,8 +282,9 @@ Wireless Protocols:
 Transport Protocols:
 
 #### MQTT:
-* This lightweight messaging protocol is used for efficient data transmission.
-* MQTT is ideal for IoT applications due to its low bandwidth usage and support for persistent connections.
+Some key factors why MQTT was choosen
+* Lightweight messaging protocol great for efficient data transmission.
+* MQTT is ideal for IoT applications due to low bandwidth usage and support for persistent connections.
 
 ### Presenting the Data
 
