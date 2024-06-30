@@ -60,10 +60,10 @@ For this project, Visual Studio Code (VS Code) was chosen as the IDE.
 
 Following installations where needed.
 
-* Visual studios (download from official website).
+* Visual studios (download from official website)
 * Python (download from official website)
 * Node.js (downlaod from official website)
-* Pymakr extension (from extensions in VSCode)
+* Pymakr extension (download from extensions in VSCode)
 * MicroPython on Rapsberry Pi Pico W (as explained in https://projects.raspberrypi.org/en/projects/get-started-pico-w/1)
 * MQTT and File Editor in home assistant 
 
