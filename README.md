@@ -78,7 +78,7 @@ Following installations where needed.
 
 First upload the project with "Ctrl+Shift+P" -> MicroPico: Upload Project To pico
 
-As seen in the figure below: 
+Then run the mauin as seen in the figure below: 
 
 ![bild](https://github.com/TMueller110/Smart_Mixer/assets/155649436/46421c3c-8bcd-4898-b7e9-22e3fe958328)
 
