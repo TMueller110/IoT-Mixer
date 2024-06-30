@@ -8,6 +8,10 @@ Invertase is an enzyme that catalyzes the hydrolysis of sucrose (table sugar) in
 
 The entire process is controlled and monitored through a Home Assistant dashboard, enabling precise control over the mixing parameters and real-time status updates. The dashboard provides real-time updates on mixing status, speed, temperature, and the remaining mixing time, ensuring efficient and accurate mixing.
 
+* Example of a commercial mixer (not the one created in the project).
+ ![bild](https://github.com/TMueller110/IoT-Mixer/assets/155649436/b5badfe4-00f6-4de9-8bfa-7a273df3faf7)
+
+
 #### Tech stack used:
 * Raspberry Pi Pico W: Microcontroller used for controlling the mixing system and interfacing with sensors and actuators.
 * MicroPython: Programming language used to write the firmware for the Raspberry Pi Pico W.
