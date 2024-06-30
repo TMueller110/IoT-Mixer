@@ -29,7 +29,7 @@ The entire process is controlled and monitored through a Home Assistant dashboar
 
 ## Objective 
 
-I chose to build this automated mixing system to streamline the process of making syrup and artificial honey as a hobby. The device serves the purpose of precisely mixing sugar, water, and invertase enzyme, adjusting for optimal reaction times based on real-time temperature data. By automating the mixing process and monitoring it through Home Assistant, I aim to achieve better estimate of the mixing time needed and a easier mixing process. The data collected will provide insights into the optimal conditions for the enzymatic reaction, helping to refine the process and calculation for the mixing time. 
+I chose to build this automated mixing system to streamline the process of making syrup and artificial honey. The device serves the purpose of precisely mixing sugar, water, and invertase enzyme, adjusting for optimal reaction times based on real-time temperature data. By automating the mixing process and monitoring it through Home Assistant, I aim to achieve better estimate of the mixing time needed and a easier mixing process. The data collected will provide insights into the optimal conditions for the enzymatic reaction, helping to refine the process and calculation for the mixing time. 
 
 Additionally, this project may inspire others to explore home automation solutions for various tasks, showcasing the potential of integrating smart technology into everyday activities.
 
