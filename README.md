@@ -65,13 +65,16 @@ Following installations where needed.
 * Node.js (downlaod from official website)
 * Pymakr extension (download from extensions in VSCode)
 * MicroPython on Rapsberry Pi Pico W (as explained in https://projects.raspberrypi.org/en/projects/get-started-pico-w/1)
-* MQTT and File Editor in home assistant 
+* MQTT and File Editor in home assistant
+* umqtt.simple library used (already in repository), it originally created by "dpgeorge" https://github.com/micropython/micropython-lib/tree/master/micropython/umqtt.simple
 
 ### Pymakr settings 
 
 "Ctrl+Shift+P" and typing Pymakr > Global Settings to configure the Pymakr settings (for COM port setting mainly)
 
 ### Upload Code to Raspberry PI Pico 
+
+First upload the project with "Ctrl+Shift+P" -> MicroPico: Upload Project To pico
 
 As seen in the figure below: 
 
