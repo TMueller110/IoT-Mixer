@@ -33,6 +33,8 @@ I chose to build this automated mixing system to streamline the process of makin
 
 Additionally, this project may inspire others to explore home automation solutions for various tasks, showcasing the potential of integrating smart technology into everyday activities.
 
+A limitation of the project is that the mixer itself (the mecahical part) still has to be created and mounted on the motor axis. 
+
 ### Materials
 
 #### List of Materials
