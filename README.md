@@ -1,6 +1,9 @@
-## Smart_Mixer
+## Smart Mixer
 A small IoT mixer application, with a tailored interface to set an automatic mixing time for converting sucrose (table sugar) into glucose and fructose.
-## Overview
+* Credentials
+  Matthias Marten mm225fv
+
+### Overview
 This project demonstrates the creation of an automated mixing system using a Raspberry Pi Pico W controlled via Home Assistant, with local control options through a push button and a potentiometer. The system is designed to mix any content, but a specific Home Assistant interface is tailored to ensure the correct mixing time when sugar, water, and invertase enzyme are combined.
 
 Invertase is an enzyme that catalyzes the hydrolysis of sucrose (table sugar) into glucose and fructose. When sugar, water, and invertase are mixed, the enzyme converts the sugar into fructose and glucose. The time required for this conversion depends on the proportions of the ingredients and the temperature, as the activity of invertase is temperature-dependent. The author has this as smaller hobby, making syrup and artificial honey 1 or 2 every year.
