@@ -158,7 +158,7 @@ Below is a  guide on how to wire everything.
 #### Resistors and Considerations
 
 - **Pull-down Resistors:** Pull-down resistors used for the push button and rotary encoder to ensure they read low (0V) when not pressed or rotated.
-
+- **24VDC and Pico W grounded:** This is to have a common ground. If not done this way a "floating" voltage would be the case (when measured from V+ to ground). 
 
 ### Code
 
