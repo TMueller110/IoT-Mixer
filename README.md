@@ -151,9 +151,9 @@ Below is a  guide on how to wire everything.
 
 7. **Potentiometer:**
    - Connect the potentiometer to the Pico W
-     - DT to 'GPI11' 
-     - CLK to 'GPI12' 
-     - SW to 'GPI13'
+     - `DT` to `GPI11` 
+     - `CLK` to `GPI12`
+     - `SW` to `GPI13`
 
 8. **Motor Connections:**
    - Connect the DC motor to the L298N motor driver outputs.
