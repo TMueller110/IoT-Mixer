@@ -317,10 +317,11 @@ The final design of the automated mixing system using the Raspberry Pi Pico W an
 #### Pictures
 Below are some pictures of the final setup:
 ![bild](https://github.com/TMueller110/IoT-Mixer/assets/155649436/ed66182d-fdc7-49e7-a3f9-feed449bd033)
-![DSC_0214](https://github.com/TMueller110/Smart_Mixer/assets/155649436/c0fb5858-b068-44db-a56c-3c2a3632bfb4)
-![DSC_0211](https://github.com/TMueller110/Smart_Mixer/assets/155649436/da2c5d74-c7c7-4010-8251-b68c29e5a808)![DSC_0213](https://github.com/TMueller110/Smart_Mixer/assets/155649436/6a879836-bb73-4292-b4b9-f57e893dca08)
-![DSC_02![DSC_0213](https://github.com/TMueller110/Smart_Mixer/assets/155649436/c9a87444-5004-4dd5-9f5c-cf289e492a24)
-12](https://github.com/TMueller110/Smart_Mixer/assets/155649436/4491b584-d09a-42c4-a8da-fb1460311a0e)
+![DSC_0213](https://github.com/TMueller110/IoT-Mixer/assets/155649436/b3000f02-a2d1-4e07-90e1-8bba0bc75b71)
+![DSC_0212](https://github.com/TMueller110/IoT-Mixer/assets/155649436/db278e51-c5e3-4a32-b658-622bc9da8eac)
+![DSC_0211](https://github.com/TMueller110/IoT-Mixer/assets/155649436/2316b721-d2a3-4f86-a18e-7d45d8587ff1)
+![DSC_0214](https://github.com/TMueller110/IoT-Mixer/assets/155649436/4d92d0b8-b82d-4d18-a110-99fd72cb48ed)
+
 
 #### Video
 To see video click the following link:
