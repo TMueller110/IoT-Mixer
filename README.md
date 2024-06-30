@@ -1,8 +1,6 @@
 ## Smart Mixer
 Author: Matthias Marten mm225fv
 
-A small IoT mixer application, with a tailored interface to set an automatic mixing time for converting sucrose (table sugar) into glucose and fructose.
-
 ### Overview
 This project demonstrates the creation of a small IoT mixer application using a Raspberry Pi Pico W controlled via Home Assistant, with local control options through a push button and a potentiometer. The system is designed to mix any content, but a specific Home Assistant interface is tailored to ensure the correct mixing time when sugar, water, and invertase enzyme are combined.
 
