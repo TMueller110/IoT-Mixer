@@ -80,6 +80,7 @@ First upload the project with "Ctrl+Shift+P" -> MicroPico: Upload Project To pic
 
 Then run the main as seen in the figure below: 
 
+![bild](https://github.com/TMueller110/IoT-Mixer/assets/155649436/8736ce84-b4ea-400c-8a4e-a5d5df9a7c28)
 ![bild](https://github.com/TMueller110/Smart_Mixer/assets/155649436/46421c3c-8bcd-4898-b7e9-22e3fe958328)
 
 ### Home Assistant
