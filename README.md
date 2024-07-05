@@ -279,7 +279,7 @@ try:
 
 * Temperature and humidity data from the DHT11 sensor are sent to the MQTT broker every 60 seconds. There is no need to update this more frequent in this application. The temperature is measuring the room temperature where the mixing is conducted and thus the temperature will not flactuate rapidly.
 
-* Motor speed and state updates are published to the MQTT broker whenever they change, ensuring real-time updates. The motor speed is set by the user either through the frontend or the local potentiometer, when the automated mixing is turned on the speed is set to the last speed that has been given (and can manually be changed during the automated mixing time). 
+* Motor speed and state updates are published to the MQTT broker whenever they change, ensuring real-time updates. The motor speed is set by the user either through the frontend or the local potentiometer. When the automated mixing is turned on the speed is set to the last speed that has been given (and can manually be changed during the automated mixing time). 
   
 Wireless Protocols:
 
@@ -297,6 +297,15 @@ Some key factors why MQTT was choosen
 
 #### Home Assistant Dashboard
 There are two Home Assistant dashboard. One for controlling the mixer directly and one for setting the parameters sugar, water and invertase. The home atuomation is then calculating the time and when the user hits the botton "mix" the mixer will start and run untill the time seen is finished. 
+
+The data is not stored but is just showing the actual temperature. This can be easily added in home assistant by the built in recorder (that uses SQlite per default, can also be easily configured to use an external database). Just add the following to the configuration.yaml to add this functionality: 
+
+recorder:
+  purge_keep_days: 30  #Keeps data for 30 days
+  include:
+    entities:
+      - sensor.pico_temperature
+      - sensor.pico_humidity
 
 * Direct Mixer Control
   
