@@ -45,6 +45,7 @@ Additionally, this project may inspire others to explore home automation solutio
 |---------------------|-----------------------------------------------------------------------------|-----------------------------------------------------|-----------------|------------|
 | Raspberry Pi Pico W | Microcontroller used for controlling the system                             | Dual-core ARM Cortex-M0+ processor, Wi-Fi enabled   | Elektrokit      | 428SEK     |
 | DHT11 Sensor        | Sensor used to measure temperature and humidity                             | Temperature range: 0-50°C, Humidity range: 20-90%   | Elektrokit      | -          |
+| Resistors           | Pull down resistor for pushbutton                                           | 10kOhm                                              | Elektrokit      | -          |
 | L298N Motor Driver  | Motor driver module used to control the motors                              | Dual H-Bridge motor driver, 5-35V, 2A per channel   | Elektrokit      | 79SEK      |
 | Push Button         | Used for local control of the motor                                         | Momentary push button                               | Elektrokit      | 10SEK      |
 | Potentiometer       | Used for local speed control of the motor                                   | 10k Ohm                                             | Elektrokit      | 10SEK      |
