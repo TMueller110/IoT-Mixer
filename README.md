@@ -89,6 +89,8 @@ Following installations/configurations need to be done for home assistant.
 
 * Install Home Assistant on RaspberryPi (guide found on official website).
 
+* Download the MQTT broker (Mosquitto Broker Add-on). Configurations are done in the configurations.yaml file (please see this file in the repository for more information). 
+
 * Configuration files need to be adjusted in Home Assistant. configuration.yaml and automation.yaml.
   
 * Home assistant dashboard. Edit the dashboard with the correct enteties 
@@ -274,9 +276,9 @@ try:
 
 #### Frequency of Data Transmission:
 
-* Temperature and humidity data from the DHT11 sensor are sent to the MQTT broker every 60 seconds. There is no need to update this more frequent in this application. 
+* Temperature and humidity data from the DHT11 sensor are sent to the MQTT broker every 60 seconds. There is no need to update this more frequent in this application. The temperature is measuring the room temperature where the mixing is conducted and thus the temperature will not flactuate rapidly.
 
-* Motor speed and state updates are published to the MQTT broker whenever they change, ensuring real-time updates.
+* Motor speed and state updates are published to the MQTT broker whenever they change, ensuring real-time updates. The motor speed is set by the user either through the frontend or the local potentiometer, when the automated mixing is turned on the speed is set to the last speed that has been given (and can manually be changed during the automated mixing time). 
   
 Wireless Protocols:
 
