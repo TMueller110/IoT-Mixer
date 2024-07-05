@@ -300,12 +300,13 @@ There are two Home Assistant dashboard. One for controlling the mixer directly a
 
 The data is not stored but is just showing the actual temperature. This can be easily added in home assistant by the built in recorder (that uses SQlite per default, can also be easily configured to use an external database). Just add the following to the configuration.yaml to add this functionality: 
 
-recorder:
+```python recorder:
   purge_keep_days: 30  #Keeps data for 30 days
   include:
     entities:
       - sensor.pico_temperature
       - sensor.pico_humidity
+```
 
 * Direct Mixer Control
   
