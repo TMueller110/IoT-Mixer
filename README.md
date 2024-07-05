@@ -67,7 +67,7 @@ Following installations where needed.
 * Python (download from official website)
 * Node.js (downlaod from official website)
 * Pymakr extension (download from extensions in VSCode)
-* MicroPython on Rapsberry Pi Pico W (as explained in https://projects.raspberrypi.org/en/projects/get-started-pico-w/1)
+* MicroPython on Rapsberry Pi Pico W (as explained in https://marketplace.visualstudio.com/items?itemName=paulober.pico-w-go)
 * MQTT and File Editor in home assistant
 * umqtt.simple library used (already in repository), it originally created by "dpgeorge" https://github.com/micropython/micropython-lib/tree/master/micropython/umqtt.simple
 
